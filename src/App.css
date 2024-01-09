@@ -5,21 +5,6 @@ body {
   color: #fff;
 }
 
-.app-container {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  background: linear-gradient(180deg, #001c37, #003147);
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-.app-title {
-  color: #ffde59;
-  font-size: 28px;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-}
 
 .book-cards {
   display: flex;
@@ -64,6 +49,6 @@ body {
 
 /* Hover effect */
 .book-cards:hover {
-  transform: scale(1.02);
+  transform: scale(1.0);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
