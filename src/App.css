@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #000428, #004e92, #005bac);
+  color: #fff;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(180deg, #001c37, #003147);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.app-title {
+  color: #ffde59;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.book-cards {
+  display: flex;
+  border: 1px solid #555;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: linear-gradient(90deg, #001c37, #003147, #005bac);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.book-cards img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px;
+  border: 2px solid #555;
+}
+
+/* .book-cards div {
+  flex-grow: 1;
+} */
+
+.book-cards h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.book-cards h3 {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+.book-cards article {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Hover effect */
+.book-cards:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
