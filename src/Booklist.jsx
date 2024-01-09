@@ -1,4 +1,3 @@
-
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import './App.css';
@@ -27,20 +26,22 @@ function Booklist() {
     fetchBooks();
   }, []);
 
-  return (
-    <>
-      {books.map((book) => (
-        <div className='book-cards' key={book.id}>
-          <img src={book.imageLinks.thumbnail} alt={book.title} />
-          <div>
-            <h1>{book.title}</h1>
-            <h3>By {book.authors}</h3>
-            <article>{book.description}</article>
-          </div>
+return (
+  <>
+    {books.map((book) => (
+      <div className="book-cards" key={book.id}>
+        <div className="image-container">
+          <img src={book.imageLinks.thumbnail} alt={book.title} className="book-image" />
         </div>
-      ))}
-    </>
-  );
+        <div className="text-container">
+          <h1 className="book-title">{book.title}</h1>
+          <h3 className="book-authors">By {book.authors}</h3>
+          <article className="book-description">{book.description}</article>
+        </div>
+      </div>
+    ))}
+  </>
+);
 }
 
 export default Booklist;
